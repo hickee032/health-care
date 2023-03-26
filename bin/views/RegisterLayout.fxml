@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="registerPage" prefHeight="430.0" prefWidth="800.0" style="-fx-background-color: #714098;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.RegisterController">
+   <children>
+      <VBox alignment="CENTER" layoutX="37.0" layoutY="22.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="366.0" prefWidth="800.0">
+               <children>
+                  <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label id="registerTitle" alignment="CENTER" prefHeight="57.0" prefWidth="799.0" text="User Register" textFill="#fffefe">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="519.0">
+                           <children>
+                              <Label prefHeight="53.0" prefWidth="100.0" text="ID" textFill="#fcfcfc">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtId" prefHeight="40.0" prefWidth="149.0" promptText="사용할 id를 입력하세요" />
+                              <Button fx:id="idChack" mnemonicParsing="false" onAction="#idChackBtn" prefHeight="40.0" prefWidth="55.0" text="chack">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Label fx:id="idclabel" prefHeight="40.0" prefWidth="165.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="520.0">
+                           <children>
+                              <Label prefHeight="53.0" prefWidth="100.0" text="Name" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtName" prefHeight="40.0" prefWidth="210.0" promptText="사용할 이름을 입력하세요" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="520.0">
+                           <children>
+                              <Label prefHeight="53.0" prefWidth="83.0" text="Password" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="17.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <PasswordField fx:id="pass" prefHeight="40.0" prefWidth="210.0" promptText="비밀번호를 입력하세요" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="520.0">
+                           <children>
+                              <Label prefHeight="53.0" prefWidth="99.0" text="Confirm" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField fx:id="passConfirm" prefHeight="40.0" prefWidth="210.0" promptText="비밀번호 확인을 입력하세요" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="177.0" fitWidth="259.0" layoutX="520.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/bicycle.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="800.0" spacing="20.0">
+               <children>
+                  <Button fx:id="RegisterBtn" mnemonicParsing="false" onAction="#register" prefHeight="39.0" prefWidth="82.0" text="Register">
+                     <HBox.margin>
+                        <Insets left="230.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#cancel" prefHeight="39.0" prefWidth="82.0" text="Cancel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="410.0" prefWidth="690.0" style="-fx-background-color: #76429b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.GraphController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutY="-2.0" prefHeight="43.0" prefWidth="690.0" style="-fx-background-color: #9776c3;">
+         <children>
+            <Button fx:id="WeBtn" mnemonicParsing="false" onAction="#WeBtnAction" text="Weight">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="KcBtn" mnemonicParsing="false" onAction="#KcBtnAction" text="Kcal">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="ExBtn" mnemonicParsing="false" onAction="#ExBtnAction" text="Ex">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Label prefHeight="15.0" prefWidth="146.0" text="최근 30일만 표시됩니다." textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <BarChart fx:id="barChart" layoutX="42.0" layoutY="77.0" prefHeight="300.0" prefWidth="606.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" tickLabelFill="WHITE" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" tickLabelFill="WHITE" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

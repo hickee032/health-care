@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MainController">
+   <children>
+      <AnchorPane prefHeight="484.0" prefWidth="810.0" style="-fx-background-color: #f76e9d;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="488.0" prefWidth="106.0">
+               <children>
+                  <Button fx:id="AmountExBTn" mnemonicParsing="false" onAction="#AmountExPage" onMouseEntered="#AmountExEntered" onMouseExited="#BtnExited" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                           <image>
+                              <Image url="@../images/EX.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#AmountFoodPage" onMouseEntered="#AmountFoodEntered" onMouseExited="#BtnExited" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                           <image>
+                              <Image url="@../images/FOOD.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#CalendarPage" onMouseEntered="#CalendarEntered" onMouseExited="#BtnExited" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                           <image>
+                              <Image url="@../images/SC.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#GraphPage" onMouseEntered="#GraphEntered" onMouseExited="#BtnExited" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                           <image>
+                              <Image url="@../images/GRP.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#MemoPage" onMouseEntered="#MemoEntered" onMouseExited="#BtnExited" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                           <image>
+                              <Image url="@../images/Memo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#MemoPage" onMouseEntered="#MainbtnEntered" onMouseExited="#BtnExited" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #f22068;" text="Main" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#MemoPage" onMouseEntered="#EndBtnEntered" onMouseExited="#BtnExited" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #f22068;" text="END" textFill="WHITE" />
+               </children>
+            </VBox>
+            <AnchorPane layoutX="106.0" layoutY="3.0" prefHeight="460.0" prefWidth="690.0" style="-fx-background-color: #9776c3;" AnchorPane.bottomAnchor="18.0" AnchorPane.topAnchor="5.0">
+               <children>
+                  <StackPane fx:id="mainContent" layoutY="55.0" prefHeight="410.0" prefWidth="690.0" style="-fx-background-color: #9776c3;">
+                     <children>
+                        <AnchorPane fx:id="Mainpage" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="223.0" fitWidth="321.0" layoutX="355.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                     </children></StackPane>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" layoutX="113.0" layoutY="8.0" prefHeight="46.0" prefWidth="679.0" style="-fx-background-color: #f22068;" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="7.0">
+               <children>
+                  <Label fx:id="TextLabel" prefHeight="30.0" prefWidth="416.0" text="어서오세요" textFill="WHITE">
+                     <font>
+                        <Font name="Dotum" size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="222.0">
+                     <children>
+                        <Button fx:id="LogBtn" alignment="CENTER" mnemonicParsing="false" onInputMethodTextChanged="#LogbtnTextChange" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2D92EA;" text="Login" textFill="#f5f5f5">
+                           <HBox.margin>
+                              <Insets right="2.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
